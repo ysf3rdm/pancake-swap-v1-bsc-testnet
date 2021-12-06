@@ -35,7 +35,15 @@
     "no-nested-ternary": 0,
     "default-case": 0,
     "react/require-default-props": 0,
-    "class-methods-use-this": 0
+    "class-methods-use-this": 0,
+    "react/jsx-no-bind": ["warn", {
+      "ignoreDOMComponents":  false,
+      "ignoreRefs":  false,
+      "allowArrowFunctions":  false,
+      "allowFunctions": false,
+      "allowBind": false
+    }],
+    "import/no-duplicates": ["warn", {"considerQueryString": true}]
     // End temporary rules
   }
 }
